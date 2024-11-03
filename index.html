@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Avalon x</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Make sure to include Font Awesome if using icons -->
+    <script defer src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- Navigation menu -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            <span>Alex</span>
+        </div>
+        <div class="links">
+            <div class="link"><a href="#">Home</a></div>
+            <div class="link"><a href="#">About</a></div>
+            <div class="link"><a href="#skills">Skills</a></div> <!-- Ensure the href targets the right ID -->
+            <div class="link"><a href="#services">Services</a></div>
+            <div class="link"><a href="#contact">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        <div class="dropdown">
+            <div class="dropdown-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancelMenu()"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="main-container">
+    <div class="image">
+        <img src="Image/BB1jjc3W.png" alt="Profile image">
+    </div>
+    <div class="content">
+        <h1 data-aos="fade-left">
+            Hey, I'm 
+            <span>Alex</span>
+        </h1>
+        <div class="typewriter">
+            I'm a 
+            <span class="typewriter-text"></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis orci potenti urna lectus sem risus. Faucibus curabitur rhoncus vel sodales enim elit senectus. Elementum nunc euismod turpis molestie felis lacus consequat senectus. Enim non eget torquent odio luctus aptent inceptos cubilia.</p>
+        <div class="social-links">
+            <a href="#" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+        <div class="btn">
+            <button type="button">Hire me</button>
+        </div>
+    </div>
+</section>
+
+<!-- About Section Start -->
+<section class="about" id="about">
+    <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+            <div class="left">
+                <img src="Image/BB1jjc3W.png" alt="An image representing Alex">
+            </div>
+            <div class="right">
+                <div class="topic">Designing is My Passion</div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="button">
+                    <button type="button">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skill Section Start -->
+<section class="skills" id="skills"> <!-- Changed class to lowercase -->
+    <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+            <div class="text">
+                <div class="topic">
+                    Skills Reflect Our Knowledge
+                </div>
+                <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis orci potenti urna lectus sem risus.</p>
+                <div class="experience">
+                    <div class="num">10</div>
+                    <div class="exp">
+                        Years of <br/>
+                        Experience
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">HTML</div>
+                    <div class="per">90%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">CSS</div>
+                    <div class="per">80%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">JavaScript</div>
+                    <div class="per">20%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">PHP</div>
+                    <div class="per">60%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- My Service Section Start -->
+<section class="services" id="services"> <!-- Changed class to lowercase -->
+    <div class="content">
+        <div class="title"><span>My Services</span></div>
+        <div class="boxes">
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="topic">Web Development</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis orci potenti urna lectus sem risus.</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="topic">Graphic Design</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis orci potenti urna lectus sem risus.</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="topic">Digital Marketing</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis orci potenti urna lectus sem risus.</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-android"></i>
+                </div>
+                <div class="topic">App Development</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis orci potenti urna lectus sem risus.</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <div class="topic">Photography</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis orci potenti urna lectus sem risus.</p>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-tablet-alt"></i>
+                </div>
+                <div class="topic">App Development</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis orci potenti urna lectus sem risus.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact me section Start -->
+<section class="contact" id="contact"> <!-- Changed class to lowercase -->
+    <div class="content">
+        <div class="title">
+            <span>Contact me</span>
+        </div>
+        <div class="text">
+            <div class="topic">Have Any Project</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis orci potenti urna lectus sem risus.</p>
+            <div class="button">
+                <button>Let's Chat</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section Start -->
+<footer>
+    <div class="text">
+        <span> Created By 
+            <a href="Peerlessgod">Peerlessgod</a>
+            | &#169;2024 All Rights Reserved</span>
+    </div>
+</footer>
+
+</body>
+</html>
